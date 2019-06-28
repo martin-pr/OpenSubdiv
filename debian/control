@@ -1,0 +1,14 @@
+Source: libopensubdiv-daily
+Section: graphics
+Priority: optional
+Maintainer: Martin Prazak <martin.prazak@gmail.com>
+Build-Depends: debhelper (>= 9), cmake, pkg-config, libc6-dev
+Standards-Version: 4.14
+Homepage: https://github.com/PixarAnimationStudios/OpenSubdiv
+Vcs-Git: https://github.com/PixarAnimationStudios/OpenSubdiv
+Vcs-Browser: https://github.com/PixarAnimationStudios/OpenSubdiv
+
+Package: libopensubdiv-daily
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: OpenSubdiv is a set of open source libraries that implement high performance subdivision surface (subdiv) evaluation on massively parallel CPU and GPU architectures. This codepath is optimized for drawing deforming subdivs with static topology at interactive framerates. The resulting limit surface matches Pixar's Renderman to numerical precision.
